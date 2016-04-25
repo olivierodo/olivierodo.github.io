@@ -82,3 +82,11 @@ li > strong:first-child { text-transform: uppercase; font-size: 0.7em; font-weig
 .article-item:first-child { border-top: solid 1px #eee; }
 .article-item .title { float: left; font-weight: 400; font-size: 1em; }
 .article-item .date { float: right; font-size: 0.8em; text-transform: uppercase; font-weight: 400; letter-spacing: 1px; color: #888; }
+
+small{
+    font-size: 9px;
+}
+
+small a {
+    border-bottom: 0px;
+}
