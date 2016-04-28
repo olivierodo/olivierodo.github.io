@@ -90,3 +90,8 @@ small{
 small a {
     border-bottom: 0px;
 }
+
+strong {
+    font-weight :initial;
+    color: #E5FF7C;
+}
