@@ -119,7 +119,7 @@
         $.getJSON( "/blogpost.json", function( data ) {
           const tmpl = "\
             <header> \
-              <h4><a href=\"__url__\" target=\"_blank\">__title__</a></h4> \
+              <h4><a href=\"__url__\"  ga-on=\"click\" ga-event-category=\"__title__\" target=\"_blank\">__title__</a></h4> \
               <p>__date__</p>\
             </header>\
           ";
@@ -130,9 +130,9 @@
             .slice(0, 3)
             .forEach(item => {
             const el = tmpl
-              .replace('__url__', item.url)
-              .replace('__title__', item.title)
-              .replace('__date__', item.date);
+              .replace(/__url__/, item.url)
+              .replace(/__title__/g, item.title)
+              .replace(/__date__/, item.date);
             $('#posts').append($(el));
           });
         })
