@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+#
+# curl https://olivierodo.me/setup-devtop | bash -
+#
+#
 
 CURRENT_USER=$(whoami)
 
