@@ -41,7 +41,7 @@ sudo su -s /bin/bash -c 'docker version' $CURRENT_USER
 
 git clone https://github.com/olivierodo/dotfiles.git
 
-sudo su -s /bin/bash -c 'cd ./dotfiles && exec ./install.sh' $CURRENT_USER
+#sudo su -s /bin/bash -c 'cd ./dotfiles && exec ./install.sh' $CURRENT_USER
 
 read -p "What is your git name ? " gitName
 read -p "What is your git email ? " gitEmail
