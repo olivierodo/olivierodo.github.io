@@ -31,8 +31,16 @@ sudo apt-get install -y \
 
 sudo usermod -aG docker $CURRENT_USER
 
-#docker version
+sudo su -s /bin/bash -c 'docker version' $CURRENT_USER
 
 git clone https://github.com/olivierodo/dotfiles.git
 
-sh ./dotfiles/install.sh
+sudo su -s /bin/bash -c 'cd ./dotfiles && exec ./install.sh' $CURRENT_USER
+
+echo "==================================================================="
+echo "SUCCESSFULL INSTALLATION !!!"
+echo "==================================================================="
+echo "==================================================================="
+echo "==================================================================="
+echo "Please exit and log yourself again"
+echo "==================================================================="
