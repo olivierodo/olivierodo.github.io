@@ -9,6 +9,7 @@ CURRENT_USER=$(whoami)
 
 echo $CURRENT_USER
 
+## Packages
 sudo apt-get update
 sudo apt-get install -y \
   apt-transport-https \
@@ -20,6 +21,7 @@ sudo apt-get install -y \
   git \
   tmux
 
+## Install Docker
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
 sudo apt-key fingerprint 0EBFCD88
@@ -38,6 +40,15 @@ sudo apt-get install -y \
 sudo usermod -aG docker $CURRENT_USER
 
 sudo su -s /bin/bash -c 'docker version' $CURRENT_USER
+
+## Kubectl
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version
+
+## Custom config
 
 git clone https://github.com/olivierodo/dotfiles.git
 
