@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+#
+# curl https://olivierodo.me/mac | bash -
+#
+#
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+
+# install softwares
+
+brew install git
+brew install station
+brew install alfred
+brew install iterm2
+brew install tmux
+brew install spotify
+brew install opera
+brew install insomnia
+brew install docker
+brew install google-backup-and-sync
+brew install keepassx
+brew install caffeine
+brew install mongodb-compass
+brew install sequel-pro
+
+## Define bash as shell
+
+chsh -s /bin/bash
+
+cd ~
+
+## Custom config
+
+CURRENT_USER=$(whoami)
+
+git clone https://github.com/olivierodo/dotfiles.git
+
+sudo su -s /bin/bash -c 'cd ./dotfiles && exec ./install.sh' $CURRENT_USER
+
