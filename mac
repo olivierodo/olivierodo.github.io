@@ -10,20 +10,24 @@ brew doctor
 
 # install softwares
 
-brew install git
-brew install station
-brew install alfred
-brew install iterm2
-brew install tmux
-brew install spotify
-brew install opera
-brew install insomnia
-brew install docker
-brew install google-backup-and-sync
-brew install keepassx
-brew install caffeine
-brew install mongodb-compass
-brew install sequel-pro
+brew install git \
+  tmux
+
+brew cask install \
+  station \
+  alfred \
+  iterm2 \
+  spotify \
+  opera \
+  insomnia \
+  docker \
+  google-backup-and-sync \
+  keepassx \
+  caffeine \
+  mongodb-compass \
+  sequel-pro \
+  recordit \
+  vlc
 
 ## Define bash as shell
 
