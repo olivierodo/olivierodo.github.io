@@ -33,7 +33,7 @@ brew cask install \
 chsh -s /bin/bash
 
 ## Add iterms to the login items
- osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/iTerm.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/iTerm.app", hidden:false}'
 
 
 
