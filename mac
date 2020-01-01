@@ -30,13 +30,16 @@ brew cask install \
   vlc
 
 ## Define bash as shell
-
 chsh -s /bin/bash
 
-cd ~
+## Add iterms to the login items
+ osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/iTerm.app", hidden:false}'
+
+
+
 
 ## Dev config
-
+cd ~
 CURRENT_USER=$(whoami)
 
 git clone https://github.com/olivierodo/dotfiles.git
