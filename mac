@@ -25,6 +25,7 @@ brew cask install \
   keepassx \
   caffeine \
   mongodb-compass \
+  google-cloud-sdk \
   sequel-pro \
   recordit \
   vlc
