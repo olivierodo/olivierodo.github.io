@@ -28,6 +28,7 @@ brew cask install \
   google-cloud-sdk \
   sequel-pro \
   recordit \
+  kubectl \
   vlc
 
 ## Define bash as shell
