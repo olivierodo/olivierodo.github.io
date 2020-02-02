@@ -30,6 +30,7 @@ brew cask install \
   sequel-pro \
   recordit \
   kubectl \
+  balenaetcher \
   vlc
 
 ## Define bash as shell
