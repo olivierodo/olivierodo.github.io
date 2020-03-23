@@ -23,7 +23,7 @@ brew cask install \
   insomnia \
   docker \
   google-backup-and-sync \
-  keepassx \
+  macpass \
   caffeine \
   mongodb-compass \
   google-cloud-sdk \
