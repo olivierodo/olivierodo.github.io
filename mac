@@ -12,7 +12,8 @@ brew doctor
 
 brew install git \
   tmux \
-  jq
+  jq \
+  task
 
 brew cask install \
   station \
@@ -31,7 +32,6 @@ brew cask install \
   recordit \
   kubectl \
   balenaetcher \
-  task \
   vlc
 
 ## Define bash as shell
