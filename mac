@@ -13,7 +13,8 @@ brew doctor
 brew install git \
   tmux \
   jq \
-  task
+  task \
+  there
 
 brew cask install \
   station \
@@ -29,9 +30,11 @@ brew cask install \
   mongodb-compass \
   google-cloud-sdk \
   sequel-pro \
-  recordit \
   kubectl \
   balenaetcher \
+  cloudapp \
+  alacritty \
+  sound-control \
   vlc
 
 ## Define bash as shell
