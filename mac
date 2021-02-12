@@ -21,7 +21,7 @@ brew cask install \
   alfred \
   iterm2 \
   spotify \
-  opera \
+  opera-gx \
   insomnia \
   docker \
   google-backup-and-sync \
