@@ -14,6 +14,7 @@ brew install git \
   tmux \
   jq \
   task \
+  kubernetes-cli \
   there
 
 brew install --cask \
@@ -30,7 +31,6 @@ brew install --cask \
   mongodb-compass \
   google-cloud-sdk \
   sequel-pro \
-  kubernetes-cli \
   balenaetcher \
   cloudapp \
   alacritty \
