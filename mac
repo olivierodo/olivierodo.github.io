@@ -17,6 +17,8 @@ brew install git \
   kubernetes-cli \
   there
 
+# M1 Warning
+# google-cloud-sdk:  https://dontreinventbicycle.com/m1-gcloud-early-2021.html
 brew install --cask \
   stack-stack \
   alfred \
