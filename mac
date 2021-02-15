@@ -14,7 +14,8 @@ brew install git \
   tmux \
   jq \
   task \
-  there
+  there \
+  caskroom/cask/brew-cask
 
 brew cask install \
   station \
