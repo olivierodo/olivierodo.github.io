@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #
-# curl https://olivierodo.me/mac | bash -
+# sudo curl https://olivierodo.me/mac | bash -
 #
 #
 
@@ -14,10 +14,9 @@ brew install git \
   tmux \
   jq \
   task \
-  there \
-  homebrew/cask
+  there
 
-brew cask install \
+brew install --cask \
   station \
   alfred \
   iterm2 \
