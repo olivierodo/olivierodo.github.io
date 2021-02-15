@@ -15,7 +15,7 @@ brew install git \
   jq \
   task \
   there \
-  caskroom/cask/brew-cask
+  homebrew/cask
 
 brew cask install \
   station \
