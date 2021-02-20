@@ -10,7 +10,8 @@ brew doctor
 
 # install softwares
 
-brew install git \
+brew install --force \
+  git \
   tmux \
   jq \
   task \
