@@ -1,5 +1,10 @@
 [
   {
+    "title" : "Stop fighting with npm by isolating it into a container",
+    "url" : "https://dev.to/olivierodo/stop-fighting-with-npm-by-isolating-it-into-a-containers-2fko",
+    "date" : "20121-05-19"
+  },
+  {
     "title" : "Build an MVP with a costless logging system through social media.",
     "url" : "https://medium.com/@Olivierodo/build-an-mvp-with-a-costless-logging-system-through-social-media-ffad9eeb9d33",
     "date" : "2018-06-26"
