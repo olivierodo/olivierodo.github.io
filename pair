@@ -47,7 +47,6 @@ echo "  email = pair@olivierodo.me" >> .gitconfig.local
 
 echo "alias pair=\"upterm host -- bash\"" >> .bash_aliases
 echo "alias stream=\"nohup gotty tmux new -A -s pair &\"" >> .bash_aliases
-echo "alias =\"upterm host -- bash\"" >> .bash_aliases
 
 echo "==================================================================="
 echo "SUCCESSFULL INSTALLATION !!!"
