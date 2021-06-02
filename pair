@@ -23,34 +23,6 @@ sudo apt-get install -y \
   nodejs \
   npm
 
-## Install Docker
-#curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-#
-#sudo apt-key fingerprint 0EBFCD88
-#
-#sudo add-apt-repository \
-#  "deb [arch=amd64] https://download.docker.com/linux/debian \
-#  $(lsb_release -cs) \
-#  stable"
-#
-#sudo apt-get update
-#
-#sudo apt-get install -y \
-#  docker-ce docker-ce-cli \
-#  containerd.io
-#
-#sudo usermod -aG docker $CURRENT_USER
-#
-#sudo su -s /bin/bash -c 'docker version' $CURRENT_USER
-#
-### Kubectl
-#
-#curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
-#chmod +x ./kubectl
-#sudo mv ./kubectl /usr/local/bin/kubectl
-#kubectl version
-
-
 curl -L https://github.com/owenthereal/upterm/releases/download/v0.6.5/upterm_linux_amd64.tar.gz -o upterm.tar.gz
 mkdir ./upterm
 tar -xvf upterm.tar.gz -C upterm
