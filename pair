@@ -1,0 +1,86 @@
+#!/bin/bash
+#
+#
+# curl https://olivierodo.me/dev | bash -
+#
+#
+
+CURRENT_USER=$(whoami)
+
+echo $CURRENT_USER
+
+## Packages
+sudo apt-get update
+sudo apt-get install -y \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg2 \
+  software-properties-common \
+  jq \
+  git \
+  tmux \
+  nodejs \
+  npm
+
+## Install Docker
+#curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+#
+#sudo apt-key fingerprint 0EBFCD88
+#
+#sudo add-apt-repository \
+#  "deb [arch=amd64] https://download.docker.com/linux/debian \
+#  $(lsb_release -cs) \
+#  stable"
+#
+#sudo apt-get update
+#
+#sudo apt-get install -y \
+#  docker-ce docker-ce-cli \
+#  containerd.io
+#
+#sudo usermod -aG docker $CURRENT_USER
+#
+#sudo su -s /bin/bash -c 'docker version' $CURRENT_USER
+#
+### Kubectl
+#
+#curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+#chmod +x ./kubectl
+#sudo mv ./kubectl /usr/local/bin/kubectl
+#kubectl version
+
+
+curl -L https://github.com/owenthereal/upterm/releases/download/v0.6.5/upterm_linux_amd64.tar.gz -o upterm.tar.gz
+mkdir ./upterm
+tar -xvf upterm.tar.gz -C upterm
+cp upterm/upterm /usr/local/bin
+
+curl -L https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz -o gotty.tar.gz
+mkdir ./gotty
+tar -xvf gotty.tar.gz -C gotty
+cp gotty/gotty /usr/local/bin
+
+curl -L https://olivierodo.me/.gotty -o .gotty
+
+## Custom config
+
+git clone https://github.com/olivierodo/dotfiles.git
+
+sudo su -s /bin/bash -c 'cd ./dotfiles && exec ./install.sh' $CURRENT_USER
+
+echo "[user]" >> .gitconfig.local
+echo "  name = Pair Buddy" >> .gitconfig.local
+echo "  email = pair@olivierodo.me" >> .gitconfig.local
+
+echo "alias pair=\"upterm host -- bash\"" >> .bash_aliases
+echo "alias stream=\"nohup gotty tmux new -A -s pair &\"" >> .bash_aliases
+echo "alias =\"upterm host -- bash\"" >> .bash_aliases
+
+echo "==================================================================="
+echo "SUCCESSFULL INSTALLATION !!!"
+echo "==================================================================="
+echo "==================================================================="
+echo "==================================================================="
+echo "Please exit and log yourself again"
+echo "==================================================================="
