@@ -29,6 +29,7 @@ brew install --cask \
   insomnia \
   docker \
   google-backup-and-sync \
+  gitify \
   macpass \
   caffeine \
   mongodb-compass \
