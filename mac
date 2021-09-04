@@ -16,7 +16,8 @@ brew install --force \
   jq \
   task \
   kubernetes-cli \
-  there
+  there \
+  gh
 
 # M1 Warning
 # google-cloud-sdk:  https://dontreinventbicycle.com/m1-gcloud-early-2021.html
