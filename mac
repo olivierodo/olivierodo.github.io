@@ -19,36 +19,30 @@ brew install --force \
   there \
   gh
 
-# M1 Warning
+# M3 Warning
 # google-cloud-sdk:  https://dontreinventbicycle.com/m1-gcloud-early-2021.html
 brew install --cask \
-  stack-stack \
   alfred \
-  iterm2 \
   spotify \
-  opera-gx \
+  opera \
   insomnia \
   docker \
-  google-backup-and-sync \
   gitify \
   macpass \
   caffeine \
-  mongodb-compass \
+  mongodb-compass
   google-cloud-sdk \
   sequel-pro \
   balenaetcher \
-  cloudapp \
   alacritty \
-  vlc
+  vlc \
+  shureplus-motiv \
+  anki \ 
+  logi-options-plus \
+  nordvpn
 
 ## Define bash as shell
 chsh -s /bin/bash
-
-## Add iterms to the login items
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/iTerm.app", hidden:false}'
-
-
-
 
 ## Dev config
 cd ~
