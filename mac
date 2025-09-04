@@ -17,7 +17,8 @@ brew install --force \
   task \
   kubernetes-cli \
   there \
-  gh
+  gh \
+  phanorcoll/homebrew-muxie/muxie
 
 # M3 Warning
 # google-cloud-sdk:  https://dontreinventbicycle.com/m1-gcloud-early-2021.html
